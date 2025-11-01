@@ -2,19 +2,12 @@ import * as React from 'react';
 import Link from "next/link";
 import Herovideo from "./Components/herovideo";
 import { ModeToggle } from "./Components/theme-control";
+import Navbar from './Components/navbar';
 export default function Home() {
   return (
     <>
     <ModeToggle />
-    <nav className="bg-blue-500 p-4 font-bold ">
-      <ul className="flex m-4 flex-end ">
-        <li className="pr-4"> <Link href="/">Home</Link></li>
-        <li className=" pr-4"><Link href="/contact">Contact</Link></li>
-        <li className="pr-4"> <Link href="/businesses">Businesses</Link> </li>
-        <li> <Link href="/offers">offers</Link></li>
-
-      </ul>
-    </nav>
+    <Navbar />
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-4xl font-bold mb-4 pb--4" > Discover local services Near You</h1>
 
