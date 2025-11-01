@@ -1,9 +1,11 @@
-import Image from "next/image";
+import * as React from 'react';
 import Link from "next/link";
 import Herovideo from "./Components/herovideo";
+import { ModeToggle } from "./Components/theme-control";
 export default function Home() {
   return (
     <>
+    <ModeToggle />
     <nav className="bg-blue-500 p-4 font-bold ">
       <ul className="flex m-4 flex-end ">
         <li className="pr-4"> <Link href="/">Home</Link></li>
